@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. contact CSS START
+/*----------------------------------------*/
+
+.rs_contact {
+    &_title {
+        span {
+            color: var(--rs-theme-2);
+        }
+    }
+}
+
+.rs_contact_inner {
+    background: #F4F4F4;
+}
+
+.rs_contact_form {
+    padding: 45px;
+}
+
+.rs_contact_form input,
+.rs_contact_form textarea {
+    background: #fff;
+    padding-right: 50px;
+}
+
+.rs_form_group {
+    margin-bottom: 30px;
+    position: relative;
+
+    i {
+        position: absolute;
+        right: 25px;
+        top: 35%;
+    }
+}

@@ -1,0 +1,85 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. trending  CSS START
+/*----------------------------------------*/
+.rs_trending {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &_left {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100%;
+        height: calc(100% - 20px);
+    }
+
+    &_content {
+        background: linear-gradient(178deg, #000 1.31%, rgba(0, 0, 0, 0.00) 94.27%);
+    }
+
+    &_offer {
+        color: var(--rs-theme-2);
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    &_title {
+        color: var(--rs-common-white);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &_shape {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+}
+
+
+
+.rs_filter {
+    _tabs {
+        button {
+            padding: 9px 42px;
+            cursor: pointer;
+            color: #010F1C;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            border: 1px solid #E6E6E6;
+            margin: 0 5px;
+
+            &:hover {
+                background: #064635;
+                color: #fff;
+            }
+        }
+    }
+
+    &_line {
+        background: #E6E6E6;
+        width: 100%;
+        height: 1px;
+        flex: 1;
+    }
+}
+
+
+.filter_slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 20px 2px;
+
+}
+
+.swiper-slide.is-hidden {
+    display: none !important;
+}

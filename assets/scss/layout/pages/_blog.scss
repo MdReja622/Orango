@@ -1,0 +1,71 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. Blog  CSS START
+/*----------------------------------------*/
+
+.rs_blog {
+    box-shadow: 0px 24px 114px 0px rgba(117, 117, 117, 0.04), 0px 10px 34px 0px rgba(90, 90, 90, 0.10);
+
+    &_img {
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+    }
+
+    &_title {
+        color: var(--rs-title, #010F1C);
+        font-family: Signika;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    &_content {
+        padding: 0 30px;
+        padding-bottom: 30px;
+    }
+
+
+    &_meta {
+        span {
+            margin-right: 45px;
+            color: var(--primary-color, #064635);
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+
+            i {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                color: var(--rs-title);
+            }
+        }
+    }
+
+
+
+}
+
+.rs_dvdr {
+    width: 100%;
+    height: 1px;
+    background: rgba(104, 113, 121, 0.20);
+}
+
+.rs_link_btn {
+    font-weight: 600;
+    color: var(--rs-theme-1);
+    font-family: var(--rs-ff-roboto);
+
+    i {
+        margin-left: 8px;
+    }
+
+    &:hover {
+        color: var(--rs-title);
+    }
+
+}

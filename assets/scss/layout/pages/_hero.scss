@@ -1,0 +1,124 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. hero CSS START
+/*----------------------------------------*/
+
+.rs_hero {
+    &_sub_title {
+        display: inline-block;
+        color: var(--rs-common-white);
+        font-family: var(--rs-ff-roboto);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            margin-right: 5px;
+            margin-top: -25px;
+        }
+    }
+
+    &_title {
+        color: var(--rs-common-white);
+        font-family: Signika;
+        font-family: var(--rs-ff-Signika);
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 1.13;
+    }
+
+    &_content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &_bg {
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    &_img {
+        position: relative;
+        margin-right: -50px;
+    }
+
+    &_offer {
+        width: 151px;
+        height: 151px;
+        background: #064635;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        border: 2px dashed #FFFFFF;
+        outline: 15px solid #064635;
+
+        span {
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--rs-common-white);
+            font-family: (--rs-ff-roboto);
+            display: inline-block;
+            line-height: 1;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+
+
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    margin-top: -11px;
+}
+
+
+
+
+
+.rs_hero-shape {
+    &_1 {
+        width: unset;
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+    }
+
+    &_2 {
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+    }
+
+    &_3 {
+        position: absolute;
+        right: -80px;
+        bottom: -25px;
+    }
+
+    &_4 {
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+    }
+
+    &_5 {
+        position: absolute;
+        bottom: 160px;
+        right: 3%;
+    }
+
+}

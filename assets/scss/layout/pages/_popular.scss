@@ -1,0 +1,177 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. popular  CSS START
+/*----------------------------------------*/
+
+.rs_popular {
+    &_card {
+        background: #DCFFE2;
+        position: relative;
+        padding: 25px 10px 25px 25px;
+        border-radius: 10px;
+    }
+
+    &_shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &_title {
+        color: var(--rs-theme-1);
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &_content {
+        p {
+            margin-bottom: 30px;
+            width: 240px;
+        }
+    }
+
+    &_img {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+
+
+
+
+.rs_offer {
+    width: 64px;
+    height: 64px;
+    background: var(--rs-theme-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: 36%;
+    right: 20px;
+    border: 2px dashed var(--rs-common-white);
+    outline: 4px solid var(--rs-theme-1);
+
+    span {
+        color: var(--rs-common-white);
+        font-family: var(rs-ff-Signika);
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 0.08px;
+        line-height: 1;
+        display: inline-block;
+
+    }
+
+    &_circle {
+        position: relative;
+        padding-left: 10px;
+        margin-top: -5px;
+    }
+
+    &_number {
+        line-height: 1;
+        font-size: 28px !important;
+        margin-top: -10px;
+    }
+
+    &_text {
+        &_percent {
+            margin-left: 6px;
+        }
+
+        &_off {
+            position: absolute;
+            right: 5px;
+
+            transform: rotate(90deg);
+        }
+    }
+
+}
+
+
+.rs_popular_item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-right: 10px;
+    border: 1px solid var(--rs-border);
+    border-radius: 5px;
+    transition: 0.3s;
+
+
+    &:hover {
+        border-color: var(--rs-theme-2);
+
+    }
+}
+
+
+.rs_popular_item-img {
+    margin-right: 10px;
+}
+
+.rs_popular_item_title {
+    color: var(--rs-title);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rs_popular_price {
+    color: var(--rs-body);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    span {
+        color: #FF0202;
+        margin-left: 10px;
+    }
+}
+
+.rs_popular_rating i {
+    color: var(--rs-yellow);
+}
+
+
+.rs_popular_item_content {
+    padding-left: 20px;
+    border-left: 1px solid var(--rs-border);
+}
+
+.rs_popular_cart {
+    margin-left: auto;
+    width: 38px;
+    height: 38px;
+    background: var(--rs-theme-1);
+    text-align: center;
+    line-height: 38px;
+    color: var(--rs-common-white);
+    border-radius: 6px;
+    transition: 0.3s;
+
+    &:hover {
+        background: var(--rs-theme-2);
+
+    }
+}
+
+.rs_popular_shape_1 {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.rs_popular_shape_2 {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}

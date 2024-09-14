@@ -1,0 +1,25 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  SECTION TITLE CSS START
+/*----------------------------------------*/
+
+
+.rs_section {
+    &_sub_title {
+        color: var(--rs-theme-1);
+        font-family: var(--rs-ff-roboto);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    &_title {
+        color: var(--rs-title);
+        font-family: var(--rs-ff-Signika);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1;
+    }
+}

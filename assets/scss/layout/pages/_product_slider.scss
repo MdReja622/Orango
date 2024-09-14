@@ -1,0 +1,34 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. product slider CSS START
+/*----------------------------------------*/
+.rs_product {
+    &_slider {
+        padding: 38px;
+        border-radius: 10px;
+    }
+
+    &_icon {
+        width: 100px;
+        height: 100px;
+        background: var(--rs-common-white);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &_title {
+        color: var(--rs-common-white);
+        font-family: var(--rs-ff-Signika);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0;
+
+        &:hover {
+            color: var(--rs-theme-2);
+        }
+    }
+}

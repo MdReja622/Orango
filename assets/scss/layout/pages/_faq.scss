@@ -1,0 +1,74 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. faq CSS START
+/*----------------------------------------*/
+.rs_accordion {
+    padding-left: 40px;
+
+    &_item {
+        margin-bottom: 30px;
+    }
+
+    &_header {
+        color: var(--rs-body);
+        font-family: var(--rs-ff-roboto);
+        font-size: 16px;
+        font-weight: 400;
+        background: #F4F4F4;
+        margin-bottom: 0;
+    }
+
+    &_button {
+        width: 100%;
+        text-align: left;
+        padding: 18px 70px 18px 30px;
+        position: relative;
+
+        &.collapsed::before {
+            background: var(--rs-theme-1);
+            width: 60px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            display: block;
+            top: 0;
+            content: "";
+            transition: 1s;
+            z-index: 1;
+        }
+
+        &.collapsed::after,
+        &::after {
+            background: transparent;
+            content: "\f077";
+            font-family: FontAwesome;
+            position: absolute;
+            right: 23px;
+            top: 18px;
+            color: #fff;
+            transition: 0.3s;
+            z-index: 2;
+            transform: rotate(-180deg);
+        }
+
+        &::after {
+            transform: rotate(0);
+            color: #000;
+        }
+
+    }
+
+    &_body {
+        padding: 20px 70px 20px 30px;
+        background: #F4F4F4;
+        border-top: 1px solid #E6E6E6;
+
+    }
+}
+
+.rs_faq_shape {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+}

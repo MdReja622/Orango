@@ -1,0 +1,141 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. featured  CSS START
+/*----------------------------------------*/
+
+.rs_featured {
+    &_item {
+        padding: 20px;
+        border-radius: 10px;
+        background: var(--rs-common-white);
+        box-shadow: 0px 10px 34px 0px rgba(90, 90, 90, 0.10);
+        border: 1px solid transparent;
+        transition: 0.3s;
+
+    }
+
+    &_border {
+        background: rgba(104, 113, 121, 0.30);
+        width: 100%;
+        height: 1px;
+        margin-top: 20px;
+    }
+
+    &_rating {
+        margin-bottom: 15px;
+
+        i {
+            color: var(--rs-yellow);
+            font-size: 16px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+
+    &_title {
+        color: var(--rs-title);
+        font-family: Signika;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    &_price {
+        color: var(--rs-body);
+        font-size: 16px;
+        font-weight: 400;
+
+        span {
+            color: #FF0202;
+            margin-left: 10px;
+        }
+    }
+
+    &_img {
+        padding-top: 20px;
+        position: relative;
+    }
+
+    &_social {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        opacity: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+        background-color: rgba($color: #064635, $alpha: .6);
+    }
+
+    &_social {
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: var(--rs-common-white);
+            color: var(--rs-theme-1);
+            border-radius: 4px;
+            margin: 0 5px;
+            font-size: 20px;
+
+            &:hover {
+                color: var(--rs-common-white);
+                background: var(--rs-theme-1);
+            }
+        }
+    }
+
+    &_shape_1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+
+    &_shape_2 {
+        position: absolute;
+        left: 0;
+        bottom: 110px;
+    }
+
+
+
+}
+
+.rs_featured_item {
+    &:hover .rs_featured_social {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    &:hover {
+        border: 1px solid var(--rs-theme-2);
+    }
+
+
+}
+
+
+.rs_tag {
+    color: var(--rs-title);
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--rs-smoke);
+    padding: 4px 17px;
+    line-height: 1;
+    border-radius: 4px;
+    z-index: 5;
+}

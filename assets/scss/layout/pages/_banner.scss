@@ -1,0 +1,34 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. banner  CSS START
+/*----------------------------------------*/
+.rs_banner_sub {
+    color: var(--rs-theme-2);
+    font-family: var(--rs-ff-Signika);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.rs_banner_title {
+    color: var(--rs-common-white);
+    font-family: var(--rs-ff-Signika);
+    font-size: 100px;
+}
+
+.rs_banner_content p {
+    color: var(--rs-gray);
+}
+
+.rs_banner_img_1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rs_banner_img_2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

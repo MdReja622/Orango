@@ -1,0 +1,101 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. review  CSS START
+/*----------------------------------------*/
+
+
+.rs_review {
+    &_sub_title {
+        color: var(--rs-body);
+    }
+
+    &_title {
+        color: var(--rs-theme-1);
+        font-size: 64px;
+        text-transform: uppercase;
+
+        &_2 {
+            color: #fff;
+            font-size: 64px;
+            text-transform: uppercase;
+            -webkit-text-stroke: 3px var(--rs-theme-1);
+            font-family: var(--rs-ff-roboto);
+        }
+    }
+
+    &_content {
+        p {
+            color: var(--rs-title);
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+
+    &_price {
+        color: var(--rs-theme-1);
+        font-family: var(--rs-ff-roboto);
+        font-size: 50px;
+        font-weight: 600;
+
+        span {
+            color: var(--Body-color, #687179);
+            font-weight: 400;
+            margin-left: 20px;
+            display: inline-block;
+        }
+    }
+
+    &_shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+
+.rs_add {
+    &_to_cart {
+        display: flex;
+
+        & .quantity-input {
+            width: 80px;
+            height: 50px;
+            margin: 0 5px;
+            border-radius: 6px;
+            background: #fff;
+            border: 1px solid rgba(#064635, 0.35);
+        }
+    }
+
+    &_plus,
+    &_minus {
+        width: 50px;
+        height: 50px;
+        background: var(--rs-theme-1);
+        color: #fff;
+        border-radius: 6px;
+
+        &:active {
+            background: #38bd99;
+        }
+    }
+
+    &_btn {
+        border-radius: 5px;
+        background: var(--rs-theme-1);
+        color: var(--rs-common-white);
+        padding: 12px 31px;
+        margin-left: 10px;
+
+        i {
+            margin-right: 10px;
+        }
+
+        &:active {
+            background: #38bd99;
+        }
+    }
+}
