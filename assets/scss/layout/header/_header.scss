@@ -104,10 +104,6 @@
 
         }
 
-        @media #{ $xl} {
-            padding-right: 30px;
-
-        }
 
         @media #{ $lg} {
             padding-right: 100px;
@@ -159,11 +155,14 @@
 
 .rs_header {
     &_logo {
-        padding: 15px 0;
+        padding: 10px 0;
+
+        @media #{$lg} {
+            padding: 20px 0;
+        }
 
         img {
             width: 208px;
-            height: 70px;
             transform: translateY(-30px);
             margin-left: 40px;
 
@@ -187,9 +186,7 @@
     }
 
     &_menu {
-        background: var(--rs-common-white);
         padding-left: 29px;
-
 
         ul {
             list-style: none;
@@ -285,34 +282,43 @@
     }
 }
 
-.rs_header_main {
-    background: var(--rs-common-white);
+
+.rs_header {
+    &_bottom_right {
+        margin-right: 30px;
+    }
+
+    &_search {
+        position: relative;
+        height: 43px;
+    }
+
+    &_search {
+        input[type="text"] {
+            height: 43px;
+            border: 1px solid transparent;
+            background: #F4F4F4;
+            border-radius: 5px;
+        }
+    }
 }
 
-.rs_header_bottom_right {
-    padding: 17px 0;
-    margin-right: 30px;
-}
-
-.rs_header_search {
-    position: relative;
-    height: 43px;
-    padding-top: 5px;
-}
 
 .search-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 46px;
-    height: 98%;
+    height: 100%;
     background: var(--rs-theme-1);
     color: var(--rs-common-white);
     border-radius: 5px;
     right: 0;
-    margin-top: 5px;
     border: 1px solid transparent;
     transition: 0.3s;
+
+
+
 
     &:hover {
         background: var(--rs-common-white);
@@ -321,12 +327,7 @@
     }
 }
 
-.rs_header_search input[type="text"] {
-    height: 43px;
-    border: 1px solid transparent;
-    background: #F4F4F4;
-    border-radius: 5px;
-}
+
 
 .rs_header_card,
 .rs_header_fav {
@@ -371,6 +372,7 @@
     top: -5px;
     right: 0;
     transition: 0.3s;
+
 }
 
 .rs_header_cta {
@@ -379,6 +381,10 @@
     }
 }
 
+
+.rs_header_cta {
+    display: flex;
+}
 
 /* hambur btn */
 .rs_header_menu_icon {
@@ -446,11 +452,6 @@
 
 @media #{$md , $sm , $xs} {
     .rs_header {
-        &_main {
-            background: var(--rs-theme-1);
-            padding: 13px 0;
-        }
-
         &_cta {
             .rs_btn_primary {
                 background: #fff;
@@ -467,17 +468,38 @@
         }
 
         &_logo {
-            padding: 25px 0;
 
             img {
-                transform: translateY(-7px);
+                transform: translateY(0);
                 margin-left: 30px;
             }
         }
     }
 
+    .rs_header_bottom {
+        background: var(--rs-theme-1);
+
+    }
+
 }
 
+@media #{$md} {
+    .rs_header_search {
+        display: inline-flex !important;
+    }
+
+    .search-btn {
+        background: var(--rs-common-white);
+        border-color: var(--rs-body);
+        color: var(--rs-body);
+
+        &:hover {
+            background: var(--rs-theme-1);
+            color: var(--rs-common-white);
+            border-color: var(--rs-body);
+        }
+    }
+}
 
 // responsive for and mobile 
 @media #{$xsx} {

@@ -1,0 +1,49 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. Partner CSS START
+/*----------------------------------------*/
+.rs_partner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px 60px;
+    box-shadow: 0px 24px 114px 0px rgba(117, 117, 117, 0.04), 0px 10px 34px 0px rgba(90, 90, 90, 0.10);
+}
+
+.rs_partner_title {
+    color: var(--primary-color, #064635);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.rs_partner_info {
+    color: var(--Body-color, #687179);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+
+.rs_partner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media #{$md} {
+        justify-content: start;
+
+        .rs_partner_item {
+            margin-right: 25px;
+        }
+    }
+}
+
+.rs_partner_area {
+    margin-bottom: -80px;
+}

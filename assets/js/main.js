@@ -54,31 +54,6 @@
 	});
 
 	////////////////////////////////////////////////////
-	// 03. Offcanvas Js
-	$(".rs_header_menu_icon").on("click", function () {
-		$(".offcanvas__area").addClass("offcanvas-opened");
-		// $(".offcanvas__full").addClass("offcanvas-full-opened");
-		$(".body-overlay").addClass("opened");
-	});
-
-	$(".offcanvas-close-btn").on("click", function () {
-		$(".offcanvas__area").removeClass("offcanvas-opened");
-		// $(".offcanvas__full").removeClass("offcanvas-full-opened");
-		$(".body-overlay").removeClass("opened");
-	});
-
-	////////////////////////////////////////////////////
-	// 03. Offcanvas Js
-	$(".cartmini-open-btn").on("click", function () {
-		$(".cartmini__area").addClass("cartmini-opened");
-		$(".body-overlay").addClass("opened");
-	});
-
-
-	$(".cartmini-close-btn").on("click", function () {
-		$(".cartmini__area").removeClass("cartmini-opened");
-		$(".body-overlay").removeClass("opened");
-	});
 
 
 
@@ -125,14 +100,6 @@
 		});
 	}
 
-	////////////////////////////////////////////////////
-	// 04. Body overlay Js
-	$(".body-overlay").on("click", function () {
-		$(".offcanvas__area").removeClass("offcanvas-opened");
-		$(".offcanvas__full").removeClass("offcanvas-full-opened");
-		$(".cartmini__area").removeClass("cartmini-opened");
-		$(".body-overlay").removeClass("opened");
-	});
 
 
 
@@ -220,6 +187,34 @@
 	var swiper = new Swiper('.product_slider_active', {
 		slidesPerView: 7,
 		loop: true,
+		autoplay: true,
+		breakpoints: {
+			// When window width is >= 640px
+			0: {
+				slidesPerView: 3,
+
+			},
+			640: {
+				slidesPerView: 4,
+
+			},
+			// When window width is >= 768px
+			768: {
+				slidesPerView: 5,
+
+			},
+			// When window width is >= 1024px
+			1024: {
+				slidesPerView: 6,
+
+			},
+			// When window width is >= 1200px
+
+			1200: {
+				slidesPerView: 7,
+
+			}
+		}
 	});
 
 
@@ -234,6 +229,16 @@
 			prevEl: '.rs_filter_prev',
 		},
 		watchOverflow: false,
+		breakpoints: {
+			// When window width is >= 640px
+			0: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+
+		}
 	});
 
 	// Function to filter slides

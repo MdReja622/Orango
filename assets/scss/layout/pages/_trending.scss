@@ -47,15 +47,19 @@
 
 
 .rs_filter {
-    _tabs {
+    &_tabs {
         button {
-            padding: 9px 42px;
+            padding: 9px 25px;
             cursor: pointer;
             color: #010F1C;
             border-radius: 5px;
             transition: 0.3s ease;
             border: 1px solid #E6E6E6;
             margin: 0 5px;
+
+            @media #{$xs} {
+                margin-bottom: 15px;
+            }
 
             &:hover {
                 background: #064635;

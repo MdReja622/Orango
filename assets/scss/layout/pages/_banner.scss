@@ -3,32 +3,98 @@
 /*----------------------------------------*/
 /*  30. banner  CSS START
 /*----------------------------------------*/
-.rs_banner_sub {
-    color: var(--rs-theme-2);
-    font-family: var(--rs-ff-Signika);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
+.rs_banner {
+    &_sub {
+        color: var(--rs-theme-2);
+        font-family: var(--rs-ff-Signika);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1;
+
+        @media #{$md} {
+            font-size: 40px;
+        }
+
+        @media #{$xs} {
+            font-size: 30px;
+        }
+    }
+
+    &_title {
+        color: var(--rs-common-white);
+        font-family: var(--rs-ff-Signika);
+        font-size: 100px;
+
+        @media #{$md} {
+            font-size: 80px;
+        }
+
+        @media #{$xs} {
+            font-size: 6 0px;
+        }
+
+    }
+
+    &_content {
+        position: relative;
+        z-index: 6;
+
+        p {
+            color: var(--rs-gray);
+        }
+
+    }
+
 }
 
-.rs_banner_title {
-    color: var(--rs-common-white);
-    font-family: var(--rs-ff-Signika);
-    font-size: 100px;
-}
-
-.rs_banner_content p {
-    color: var(--rs-gray);
-}
 
 .rs_banner_img_1 {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media #{$xl, $lg, $md} {
+        width: 350px;
+
+    }
+
+    @media #{$xs} {
+        width: 350px;
+    }
 }
 
 .rs_banner_img_2 {
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @media #{$xl, $lg, $md} {
+        width: 350px;
+    }
+
+    @media #{$xs} {
+        width: 350px;
+    }
+}
+
+.rs_banner_inner {
+    position: relative;
+    z-index: 9;
+
+}
+
+
+@media #{$md , $xs} {
+    .rs_banner_area {
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
 }

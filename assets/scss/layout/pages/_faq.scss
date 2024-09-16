@@ -6,6 +6,10 @@
 .rs_accordion {
     padding-left: 40px;
 
+    @media #{$xl, $lg, $md} {
+        padding-left: 0;
+    }
+
     &_item {
         margin-bottom: 30px;
     }
@@ -71,4 +75,23 @@
     position: absolute;
     left: 0;
     bottom: 25px;
+
+    @media #{$lg} {
+        bottom: 0;
+        left: 40px;
+    }
+
+    @media #{$md} {
+        bottom: -120px;
+
+    }
+
+    @media #{$xs} {
+        bottom: 0;
+
+    }
+}
+
+.rs_faq_img img {
+    width: 100%;
 }

@@ -10,15 +10,17 @@
             color: var(--rs-theme-2);
         }
     }
+
+    &_inner {
+        background: #F4F4F4;
+    }
+
+    &_form {
+        padding: 45px;
+    }
 }
 
-.rs_contact_inner {
-    background: #F4F4F4;
-}
 
-.rs_contact_form {
-    padding: 45px;
-}
 
 .rs_contact_form input,
 .rs_contact_form textarea {
@@ -34,5 +36,15 @@
         position: absolute;
         right: 25px;
         top: 35%;
+    }
+
+    textarea::placeholder {
+        color: var(--rs-body);
+        opacity: 1;
+    }
+
+    textarea::focus {
+        opacity: 0;
+
     }
 }

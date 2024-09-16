@@ -5,6 +5,8 @@
 /*----------------------------------------*/
 
 .rs_featured {
+
+
     &_item {
         padding: 20px;
         border-radius: 10px;
@@ -55,7 +57,16 @@
     &_img {
         padding-top: 20px;
         position: relative;
+
+        img {
+            width: 100%;
+
+            @media #{$sm} {
+                width: 100%;
+            }
+        }
     }
+
 
     &_social {
         position: absolute;
@@ -99,12 +110,28 @@
         position: absolute;
         right: 0;
         top: 50px;
+
+        @media #{$xs} {
+            display: none;
+        }
     }
 
     &_shape_2 {
         position: absolute;
         left: 0;
         bottom: 110px;
+
+        @media #{$lg, $xl} {
+            bottom: 0;
+        }
+
+        @media #{$md} {
+            bottom: 10px;
+        }
+
+        @media #{$xs} {
+            bottom: 0;
+        }
     }
 
 

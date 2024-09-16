@@ -174,4 +174,15 @@
     position: absolute;
     bottom: 100px;
     left: 0;
+
+    @media #{$md, $xs} {
+        display: none;
+    }
+
+    @media #{$xl} {
+        bottom: -60px;
+
+    }
+
+
 }
