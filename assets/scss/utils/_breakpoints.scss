@@ -2,15 +2,17 @@
 $xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
 $xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
 $xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
-$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
-$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$md: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)'; //xl device
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)'; //lg device
+$md: 'only screen and (min-width: 768px) and (max-width: 991px)'; //md device tablets
+$xs: '(max-width: 767px)'; //mobile devices
+$xsx: '(max-width: 480px)';
+$xs2: '(max-width: 366px)';
+
+
 $mdm: 'only screen and (min-width: 880px) and (max-width: 991px)';
 $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
-$xs: '(max-width: 767px)';
-$xsx: '(max-width: 480px)';
 $xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
-$xs2: '(max-width: 366px)';
 
 
 
@@ -18,3 +20,20 @@ $xs2: '(max-width: 366px)';
 // responsive variable for wordpress admin bar
 $wp-sm: '@media (max-width: 782px)';
 $wp-xs: '@media (max-width: 600px)';
+
+
+// @media (max-width: 575.98px) {
+//     /* CSS for extra small devices */
+// }
+
+// @media (min-width: 576px) and (max-width: 767.98px) {
+//     /* CSS for small mobile devices */
+// }
+
+// @media (max-width: 767px) {
+//     /* CSS for mobile devices */
+// }
+
+// @media (min-width: 768px) and (max-width: 991.98px) {
+//     /* CSS for tablets */
+// }

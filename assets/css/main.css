@@ -6119,6 +6119,32 @@ input[type=color] {
   color: var(--rs-common-white);
 }
 
+.rs_offcanvas_social_title {
+  font-size: 20px;
+  color: #000;
+}
+
+.rs_offcanvas_social a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 5px;
+  background: var(--rs-common-white);
+  color: var(--rs-theme-1);
+  border-radius: 50%;
+}
+.rs_offcanvas_social a:hover {
+  background: var(--rs-theme-1);
+  color: var(--rs-common-white);
+}
+
+.rs_offcanvas_btn a {
+  border-radius: inherit;
+}
+
 /*----------------------------------------*/
 /*  mobile mwnu CSS START
 /*----------------------------------------*/
@@ -7747,7 +7773,7 @@ input[type=color] {
   }
 }
 @media (max-width: 480px) {
-  .rs_btn_primary {
+  .rs_header_cta {
     display: none;
   }
 }
@@ -8653,7 +8679,7 @@ input[type=color] {
 }
 @media (max-width: 767px) {
   .rs_banner_title {
-    font-size: 6 0px;
+    font-size: 60px;
   }
 }
 .rs_banner_content {
@@ -8721,6 +8747,11 @@ input[type=color] {
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .rs_trending {
+    gap: 0;
+  }
 }
 .rs_trending_left {
   border-radius: 10px;
@@ -8867,7 +8898,7 @@ input[type=color] {
 }
 @media (max-width: 767px) {
   .rs_faq_shape {
-    bottom: 0;
+    bottom: -110px;
   }
 }
 

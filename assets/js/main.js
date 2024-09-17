@@ -232,6 +232,9 @@
 		breakpoints: {
 			// When window width is >= 640px
 			0: {
+				slidesPerView: 1,
+			},
+			475: {
 				slidesPerView: 2,
 			},
 			768: {

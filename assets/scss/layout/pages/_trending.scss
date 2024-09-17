@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
 
+    @media #{$xs} {
+        gap: 0;
+    }
+
     &_left {
         border-radius: 10px;
         overflow: hidden;
