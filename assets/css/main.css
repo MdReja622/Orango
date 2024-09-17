@@ -8449,6 +8449,11 @@ input[type=color] {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  .rs_add_to_cart {
+    gap: 15px;
+  }
+}
 .rs_add_to_cart .quantity-input {
   width: 80px;
   height: 50px;
@@ -8824,7 +8829,7 @@ input[type=color] {
 .rs_accordion {
   padding-left: 40px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .rs_accordion {
     padding-left: 0;
   }
@@ -8917,6 +8922,11 @@ input[type=color] {
 }
 .rs_contact_form {
   padding: 45px;
+}
+@media (max-width: 767px) {
+  .rs_contact_form {
+    padding: 20px;
+  }
 }
 
 .rs_contact_form input,
@@ -9092,6 +9102,22 @@ input[type=color] {
   padding: 25px 60px;
   box-shadow: 0px 24px 114px 0px rgba(117, 117, 117, 0.04), 0px 10px 34px 0px rgba(90, 90, 90, 0.1);
 }
+@media (max-width: 767px) {
+  .rs_partner {
+    margin: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rs_partner {
+    justify-content: start;
+  }
+  .rs_partner .rs_partner_item {
+    margin-right: 25px;
+  }
+}
 
 .rs_partner_title {
   color: var(--primary-color, #064635);
@@ -9104,21 +9130,6 @@ input[type=color] {
   color: var(--Body-color, #687179);
   font-size: 14px;
   font-weight: 400;
-}
-
-.rs_partner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rs_partner {
-    justify-content: start;
-  }
-  .rs_partner .rs_partner_item {
-    margin-right: 25px;
-  }
 }
 
 .rs_partner_area {

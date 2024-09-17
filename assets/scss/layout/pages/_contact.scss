@@ -17,6 +17,11 @@
 
     &_form {
         padding: 45px;
+
+        @media #{$xs} {
+            padding: 20px;
+
+        }
     }
 }
 

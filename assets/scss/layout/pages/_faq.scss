@@ -6,7 +6,7 @@
 .rs_accordion {
     padding-left: 40px;
 
-    @media #{$xl, $lg, $md} {
+    @media #{$xl, $lg, $md, $xs} {
         padding-left: 0;
     }
 
